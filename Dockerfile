@@ -29,9 +29,10 @@ WORKDIR /icy
 
 # Install Icy.
 RUN \
-      cd /icy
-      wget http://www.icy.bioimageanalysis.org/downloadIcy/icy.zip
-      unzip icy.zip
+      cd /icy && \
+      wget http://www.icy.bioimageanalysis.org/downloadIcy/icy.zip && \
+      unzip icy.zip 
+      
 ADD icy_patch.jar /icy/icy.jar
 
 
