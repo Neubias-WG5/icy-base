@@ -32,7 +32,8 @@ RUN \
       cd /icy
       wget http://www.icy.bioimageanalysis.org/downloadIcy/icy.zip
       unzip icy.zip
-      #cp icy_patch.jar /icy/icy.jar
+ADD icy_patch.jar /icy/icy.jar
+
 
 # Add icy to the PATH
 ENV PATH $PATH:/icy
