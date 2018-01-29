@@ -40,3 +40,4 @@ ENV PATH $PATH:/icy
 
 RUN mkdir /icy/data
 RUN mkdir /icy/data/in
+RUN mkdir /icy/protocols
