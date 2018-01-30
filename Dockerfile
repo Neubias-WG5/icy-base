@@ -32,10 +32,11 @@ WORKDIR /icy
 # Install Icy.
 RUN \
       cd /icy && \
-      wget http://www.icy.bioimageanalysis.org/downloadIcy/icy.zip && \
+      wget -O icy.zip http://www.icy.bioimageanalysis.org/downloadIcy/icy_1.9.5.2b.zip && \
+      #wget http://www.icy.bioimageanalysis.org/downloadIcy/icy.zip && \
       unzip icy.zip 
       
-ADD icy_patch.jar /icy/icy.jar
+#ADD icy_patch.jar /icy/icy.jar
 
 
 # Add icy to the PATH
