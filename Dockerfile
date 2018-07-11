@@ -3,7 +3,8 @@ FROM neubiaswg5/neubias-base
 # Java is installed in neubiaswg5/neubias-base.
 
 # Install Icy.
-RUN mkdir -p /icy && \
+RUN apt-get update && apt-get install unzip wget && \
+    mkdir -p /icy && \
     cd /icy && \
     wget -O icy.zip http://www.icy.bioimageanalysis.org/downloadIcy/icy_1.9.5.2b.zip && \
     unzip icy.zip && \
